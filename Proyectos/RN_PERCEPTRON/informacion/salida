@@ -1,0 +1,37 @@
+// Archivo generado automaticamente por KnowHow4cortex 
+// Establece la matriz de entrada con los datos simulados 
+// en plataforma Pyceptron y Perceptron4test. 
+// Autor: Dario E, Farías. 
+
+
+#define  CANT_ELEMENTOS_RED  9
+
+#define  CANT_ENTRADAS_NEURONA  3 
+
+struct training_data{
+float entrada[CANT_ENTRADAS_NEURONA];
+float salidaEsperada;
+};
+
+
+struct prop_data{
+float peso[CANT_ENTRADAS_NEURONA];
+float error;
+float bias;
+};
+
+
+struct training_data infoNeuronal[CANT_ELEMENTOS_RED]={{{ 10 , 10 , 10  }, -1  },{{ 1 , 255 , 255  }, -1  },{{ 255 , 255 , 255  }, -1  },{{ 255 , 255 , 1  }, -1  },{{ 255 , 1 , 1  }, -1  },{{ 1 , 1 , 1  }, -1  },{{ 10 , 10 , 160  }, 1  },{{ 1 , 1 , 88  }, 1  },{{ 255 , 1 , 255  }, -1  }};   // 9
+
+
+//struct training_data infoNeuronal[CANT_ELEMENTOS_RED]={{{ -1 , -1 , -1  }, 0  },{{ -1 , 1 , 1  }, 0  },{{ 1 , 1 , 1  }, 0  },{{ 1 , 1 , -1  }, 0  },{{ 1 , -1 , -1  }, 0  },{{ -1 , -1 , -1  }, 0  },{{ -1 , -1 , 1  }, 1  },{{ 1 , -1 , 1  }, 0  }}; // 8
+
+
+//struct training_data infoNeuronal[CANT_ELEMENTOS_RED]={{{ 10 , 10 , 10  }, 0  },{{ 255 , 255 , 255  }, 1  }};    // 2
+
+
+struct prop_data propNeuronal;
+struct training_data *datosNeuronales= &infoNeuronal;
+struct prop_data *propNeurona= &propNeuronal;
+
+struct training_data testNeurona;   //= {{ 10 , 10 , 10  }, 1  };

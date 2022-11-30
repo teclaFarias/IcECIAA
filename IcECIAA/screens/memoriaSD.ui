@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>memoriaSD</class>
+ <widget class="QDialog" name="memoriaSD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>903</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lector de Memoria SD</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="2">
+    <widget class="QTextBrowser" name="textBrowser_2"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>438</width>
+        <height>639</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="12" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>Inicializar Memoria</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_2"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Valor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Bloque</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Posición</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLabel" name="label_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Bloque Inicial</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <widget class="QTextBrowser" name="textBrowser"/>
+       </item>
+       <item row="9" column="2">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Bloque Final</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLineEdit" name="lineEdit_5"/>
+       </item>
+       <item row="12" column="1">
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="text">
+          <string>Información</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="2">
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="text">
+          <string>Leer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="text">
+          <string>Escribir</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

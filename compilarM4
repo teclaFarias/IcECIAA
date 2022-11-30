@@ -1,0 +1,43 @@
+#!/bin/bash
+DIA=`date +"%d/%m/%Y"`
+HORA=`date +"%H:%M"`
+ARCHIVO="main_m4"
+PROYECTO="TxRxUARTx"
+
+echo -e "\n\e[1;32m*******************************************************************"
+echo -e "\e[1;32m INICIO DEL PROCESO - $DIA $HORA"
+echo -e "\e[1;32m*******************************************************************"
+echo -e "\n \e[1;37m Borrando el contenido de los directorios..."
+
+echo -e "\n \e[0;36mBorrando BIN..."
+#rm -f bin/*
+echo -e "\n \e[0;36mBorrando OBJ..."
+#rm -f obj/*
+
+
+echo -e "\n \e[0;32mCreando Objeto de funciones.c ..."
+#arm-none-eabi-gcc -c  -Wall -ggdb3 -fdata-sections --function-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -I"src/M4/inc/" -I"lpcopen_lpc4337/inc" -DCORE_M4 src/funciones.c -o obj/funciones.o
+
+echo -e "\n \e[0;32mCreando Objeto de cfg_perifericos.c ..."
+#arm-none-eabi-gcc -c  -Wall -ggdb3 -fdata-sections --function-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -I"src/M4/inc/" -I"lpcopen_lpc4337/inc" -DCORE_M4 src/cfg_perifericos.c -o obj/cfg_perifericos.o
+
+echo -e "\n \e[0;31mCreando Objeto de $ARCHIVO.c ..."
+
+# ***** M4 *****
+arm-none-eabi-gcc -DDEBUG -DCORE_M4 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER -D__MULTICORE_MASTER_SLAVE_M0APP -D__FPU_PRESENT -Dlpc4337_m4 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections -I"Proyectos/$PROYECTO/M4/inc/" -I"lpcopen_lpc4337/inc" -c Proyectos/$PROYECTO/M4/src/$ARCHIVO.c -o out/lpc4337_m4/obj/$ARCHIVO.o
+
+
+echo -e "\n \e[0;32mLinkeando Objetos - Generando $ARCHIVO.AXF ..."
+arm-none-eabi-gcc out/lpc4337_m4/obj/$ARCHIVO.o  -Xlinker --start-group liblpcopen_lpc4337.a -Xlinker --end-group -o out/lpc4337_m4/$ARCHIVO.axf -fno-builtin -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wl,-Map="out/lpc4337_m4/$ARCHIVO.map",-gc-sections -nostdlib -T "etc/ld_m4/ciaa_lpc4337.ld"
+
+
+
+echo -e "\n \e[1;33mGenerando $ARCHIVO.BIN ..."
+arm-none-eabi-objcopy -O binary out/lpc4337_m4/$ARCHIVO.axf out/lpc4337_m4/$ARCHIVO.bin
+
+echo -e "\n \e[0;31mEmpiezo a quemar el Micro..."
+
+openocd -l openocd.log -f etc/openocd/ciaa-nxp.cfg -c "init" -c "halt 0" -c "flash write_image erase unlock out/lpc4337_m4/$ARCHIVO.bin 0x1A000000 bin" -c "reset run" -c "shutdown" 1> NUL
+
+echo -e "\n\e[0;37m"
+

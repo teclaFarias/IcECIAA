@@ -1,0 +1,8 @@
+#!/bin/bash
+echo -n "Nombre de la Interfase a generar (sin extensión): "
+read archivo
+pyuic5 $archivo.ui > out/$archivo.py
+echo -n "Se generó el archivo de interfase en out/$archivo.py"
+echo -n " "
+
+

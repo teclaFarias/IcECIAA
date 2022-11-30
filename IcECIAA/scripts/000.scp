@@ -1,0 +1,34 @@
+//Prueba de Leds
+
+2$2# // nada
+48$100# //demora
+2$3# // nada2
+48$100# //demora
+2$5# // nada3
+48$100# //demora
+2$1# // nada4
+48$100# //demora
+1$2# // nada
+48$300# //demora
+1$3# // nada2
+48$300# //demora
+1$5# // nada3
+48$300# //demora
+1$1# // nada4
+48$300# //demora
+2$2# // nada
+48$100# //demora
+2$3# // nada2
+48$100# //demora
+2$5# // nada3
+48$100# //demora
+2$1# // nada4
+48$100# //demora
+1$2# // nada
+48$300# //demora
+1$3# // nada2
+48$300# //demora
+1$5# // nada3
+48$300# //demora
+1$1# // nada4
+48$300# //demora

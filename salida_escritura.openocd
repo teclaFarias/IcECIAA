@@ -1,0 +1,5 @@
+echo "*** linking project M4 ***"
+*** linking project M4 ***
+arm-none-eabi-gcc -nostdlib -fno-builtin -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Xlinker -Map=out/lpc4337_m4/M4.map -Wl,--gc-sections -Tetc/ld/lpc4337_m4_lib.ld -Tetc/ld/lpc4337_m4_mem.ld -Tetc/ld/lpc4337_m4.ld -o out/lpc4337_m4/M4.axf out/lpc4337_m4/obj/main_m4.o  -Lout/lpc4337_m4 -lbase -lboard -lchip  
+make: arm-none-eabi-gcc: No existe el archivo o el directorio
+make: *** [Makefile:87: M4] Error 127

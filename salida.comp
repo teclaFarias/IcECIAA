@@ -1,0 +1,676 @@
+echo "*** compiling C file modules/lpc4337_m0/base/src/cr_startup_lpc43xx-m0app.c ***"
+*** compiling C file modules/lpc4337_m0/base/src/cr_startup_lpc43xx-m0app.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/base/src/cr_startup_lpc43xx-m0app.c -o out/lpc4337_m0/obj/cr_startup_lpc43xx-m0app.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/base/src/cr_startup_lpc43xx-m0app.c -MM > out/lpc4337_m0/obj/cr_startup_lpc43xx-m0app.d
+echo "*** compiling C file modules/lpc4337_m0/base/src/sysinit.c ***"
+*** compiling C file modules/lpc4337_m0/base/src/sysinit.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/base/src/sysinit.c -o out/lpc4337_m0/obj/sysinit.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/base/src/sysinit.c -MM > out/lpc4337_m0/obj/sysinit.d
+echo "*** archiving static library base ***"
+*** archiving static library base ***
+arm-none-eabi-ar rcs out/lpc4337_m0/libbase.a out/lpc4337_m0/obj/cr_startup_lpc43xx-m0app.o out/lpc4337_m0/obj/sysinit.o
+arm-none-eabi-size out/lpc4337_m0/libbase.a
+   text	   data	    bss	    dec	    hex	filename
+    562	      0	      0	    562	    232	cr_startup_lpc43xx-m0app.o (ex out/lpc4337_m0/libbase.a)
+     10	      0	      0	     10	      a	sysinit.o (ex out/lpc4337_m0/libbase.a)
+echo "*** compiling C file modules/lpc4337_m0/board/src/board.c ***"
+*** compiling C file modules/lpc4337_m0/board/src/board.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/board.c -o out/lpc4337_m0/obj/board.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/board.c -MM > out/lpc4337_m0/obj/board.d
+echo "*** compiling C file modules/lpc4337_m0/board/src/board_sysinit.c ***"
+*** compiling C file modules/lpc4337_m0/board/src/board_sysinit.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/board_sysinit.c -o out/lpc4337_m0/obj/board_sysinit.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/board_sysinit.c -MM > out/lpc4337_m0/obj/board_sysinit.d
+echo "*** compiling C file modules/lpc4337_m0/board/src/lpc_phy_smsc87x0.c ***"
+*** compiling C file modules/lpc4337_m0/board/src/lpc_phy_smsc87x0.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/lpc_phy_smsc87x0.c -o out/lpc4337_m0/obj/lpc_phy_smsc87x0.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/board/src/lpc_phy_smsc87x0.c -MM > out/lpc4337_m0/obj/lpc_phy_smsc87x0.d
+echo "*** archiving static library board ***"
+*** archiving static library board ***
+arm-none-eabi-ar rcs out/lpc4337_m0/libboard.a out/lpc4337_m0/obj/board.o out/lpc4337_m0/obj/board_sysinit.o out/lpc4337_m0/obj/lpc_phy_smsc87x0.o
+arm-none-eabi-size out/lpc4337_m0/libboard.a
+   text	   data	    bss	    dec	    hex	filename
+   2724	      0	      4	   2728	    aa8	board.o (ex out/lpc4337_m0/libboard.a)
+    480	      0	      0	    480	    1e0	board_sysinit.o (ex out/lpc4337_m0/libboard.a)
+    968	      0	     18	    986	    3da	lpc_phy_smsc87x0.o (ex out/lpc4337_m0/libboard.a)
+echo "*** compiling C file modules/lpc4337_m0/chip/src/ccan_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/ccan_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ccan_18xx_43xx.c -o out/lpc4337_m0/obj/ccan_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ccan_18xx_43xx.c -MM > out/lpc4337_m0/obj/ccan_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/gpiogroup_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/gpiogroup_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpiogroup_18xx_43xx.c -o out/lpc4337_m0/obj/gpiogroup_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpiogroup_18xx_43xx.c -MM > out/lpc4337_m0/obj/gpiogroup_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/hsadc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/hsadc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/hsadc_18xx_43xx.c -o out/lpc4337_m0/obj/hsadc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/hsadc_18xx_43xx.c -MM > out/lpc4337_m0/obj/hsadc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/dac_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/dac_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/dac_18xx_43xx.c -o out/lpc4337_m0/obj/dac_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/dac_18xx_43xx.c -MM > out/lpc4337_m0/obj/dac_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/lcd_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/lcd_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/lcd_18xx_43xx.c -o out/lpc4337_m0/obj/lcd_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/lcd_18xx_43xx.c -MM > out/lpc4337_m0/obj/lcd_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sct_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sct_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sct_18xx_43xx.c -o out/lpc4337_m0/obj/sct_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sct_18xx_43xx.c -MM > out/lpc4337_m0/obj/sct_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/wwdt_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/wwdt_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/wwdt_18xx_43xx.c -o out/lpc4337_m0/obj/wwdt_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/wwdt_18xx_43xx.c -MM > out/lpc4337_m0/obj/wwdt_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/eeprom_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/eeprom_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/eeprom_18xx_43xx.c -o out/lpc4337_m0/obj/eeprom_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/eeprom_18xx_43xx.c -MM > out/lpc4337_m0/obj/eeprom_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/atimer_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/atimer_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/atimer_18xx_43xx.c -o out/lpc4337_m0/obj/atimer_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/atimer_18xx_43xx.c -MM > out/lpc4337_m0/obj/atimer_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/gpdma_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/gpdma_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpdma_18xx_43xx.c -o out/lpc4337_m0/obj/gpdma_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpdma_18xx_43xx.c -MM > out/lpc4337_m0/obj/gpdma_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/rtc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/rtc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/rtc_18xx_43xx.c -o out/lpc4337_m0/obj/rtc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/rtc_18xx_43xx.c -MM > out/lpc4337_m0/obj/rtc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/aes_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/aes_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/aes_18xx_43xx.c -o out/lpc4337_m0/obj/aes_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/aes_18xx_43xx.c -MM > out/lpc4337_m0/obj/aes_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/evrt_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/evrt_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/evrt_18xx_43xx.c -o out/lpc4337_m0/obj/evrt_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/evrt_18xx_43xx.c -MM > out/lpc4337_m0/obj/evrt_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/timer_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/timer_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/timer_18xx_43xx.c -o out/lpc4337_m0/obj/timer_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/timer_18xx_43xx.c -MM > out/lpc4337_m0/obj/timer_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/iap_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/iap_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/iap_18xx_43xx.c -o out/lpc4337_m0/obj/iap_18xx_43xx.o
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_PreSectorForReadWrite':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:59:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:59:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_CopyRamToFlash':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:74:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:74:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_EraseSector':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:89:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:89:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_BlankCheckSector':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:103:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:103:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_ReadPID':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:114:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:114:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_ReadBootCode':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:125:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:125:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_Compare':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:139:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:139:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_ReinvokeISP':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:150:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:150:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_ReadUID':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:161:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:161:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_ErasePage':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:175:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:175:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c: In function 'Chip_IAP_SetBootFlashBank':
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:188:12: warning: passing argument 1 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+            ^~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:188:21: warning: passing argument 2 of 'iap_entry' from incompatible pointer type [-Wincompatible-pointer-types]
+  iap_entry(command, result);
+                     ^~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:210:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/chip/src/iap_18xx_43xx.c:32:
+modules/lpc4337_m0/chip/inc/romapi_18xx_43xx.h:115:20: note: expected 'unsigned int *' but argument is of type 'uint32_t * {aka long unsigned int *}'
+ static INLINE void iap_entry(unsigned int cmd_param[], unsigned int status_result[])
+                    ^~~~~~~~~
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/iap_18xx_43xx.c -MM > out/lpc4337_m0/obj/iap_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sysinit_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sysinit_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sysinit_18xx_43xx.c -o out/lpc4337_m0/obj/sysinit_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sysinit_18xx_43xx.c -MM > out/lpc4337_m0/obj/sysinit_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sdio_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sdio_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdio_18xx_43xx.c -o out/lpc4337_m0/obj/sdio_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdio_18xx_43xx.c -MM > out/lpc4337_m0/obj/sdio_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sct_pwm_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sct_pwm_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sct_pwm_18xx_43xx.c -o out/lpc4337_m0/obj/sct_pwm_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sct_pwm_18xx_43xx.c -MM > out/lpc4337_m0/obj/sct_pwm_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/ritimer_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/ritimer_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ritimer_18xx_43xx.c -o out/lpc4337_m0/obj/ritimer_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ritimer_18xx_43xx.c -MM > out/lpc4337_m0/obj/ritimer_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sdmmc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sdmmc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdmmc_18xx_43xx.c -o out/lpc4337_m0/obj/sdmmc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdmmc_18xx_43xx.c -MM > out/lpc4337_m0/obj/sdmmc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/i2c_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/i2c_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2c_18xx_43xx.c -o out/lpc4337_m0/obj/i2c_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2c_18xx_43xx.c -MM > out/lpc4337_m0/obj/i2c_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/enet_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/enet_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/enet_18xx_43xx.c -o out/lpc4337_m0/obj/enet_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/enet_18xx_43xx.c -MM > out/lpc4337_m0/obj/enet_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/uart_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/uart_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/uart_18xx_43xx.c -o out/lpc4337_m0/obj/uart_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/uart_18xx_43xx.c -MM > out/lpc4337_m0/obj/uart_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/ssp_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/ssp_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ssp_18xx_43xx.c -o out/lpc4337_m0/obj/ssp_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ssp_18xx_43xx.c -MM > out/lpc4337_m0/obj/ssp_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/stopwatch_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/stopwatch_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/stopwatch_18xx_43xx.c -o out/lpc4337_m0/obj/stopwatch_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/stopwatch_18xx_43xx.c -MM > out/lpc4337_m0/obj/stopwatch_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/ring_buffer.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/ring_buffer.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ring_buffer.c -o out/lpc4337_m0/obj/ring_buffer.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/ring_buffer.c -MM > out/lpc4337_m0/obj/ring_buffer.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/pmc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/pmc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/pmc_18xx_43xx.c -o out/lpc4337_m0/obj/pmc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/pmc_18xx_43xx.c -MM > out/lpc4337_m0/obj/pmc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/clock_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/clock_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/clock_18xx_43xx.c -o out/lpc4337_m0/obj/clock_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/clock_18xx_43xx.c -MM > out/lpc4337_m0/obj/clock_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/i2s_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/i2s_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2s_18xx_43xx.c -o out/lpc4337_m0/obj/i2s_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2s_18xx_43xx.c -MM > out/lpc4337_m0/obj/i2s_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/i2cm_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/i2cm_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2cm_18xx_43xx.c -o out/lpc4337_m0/obj/i2cm_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/i2cm_18xx_43xx.c -MM > out/lpc4337_m0/obj/i2cm_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/spi_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/spi_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/spi_18xx_43xx.c -o out/lpc4337_m0/obj/spi_18xx_43xx.o
+modules/lpc4337_m0/chip/src/spi_18xx_43xx.c: In function 'Chip_SPI_Int_FlushData':
+modules/lpc4337_m0/chip/src/spi_18xx_43xx.c:138:20: warning: variable 'tmp' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t tmp;
+                    ^~~
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/spi_18xx_43xx.c -MM > out/lpc4337_m0/obj/spi_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/sdif_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/sdif_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdif_18xx_43xx.c -o out/lpc4337_m0/obj/sdif_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/sdif_18xx_43xx.c -MM > out/lpc4337_m0/obj/sdif_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/adc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/adc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/adc_18xx_43xx.c -o out/lpc4337_m0/obj/adc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/adc_18xx_43xx.c -MM > out/lpc4337_m0/obj/adc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/chip_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/chip_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/chip_18xx_43xx.c -o out/lpc4337_m0/obj/chip_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/chip_18xx_43xx.c -MM > out/lpc4337_m0/obj/chip_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/emc_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/emc_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/emc_18xx_43xx.c -o out/lpc4337_m0/obj/emc_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/emc_18xx_43xx.c -MM > out/lpc4337_m0/obj/emc_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/gpio_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/gpio_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpio_18xx_43xx.c -o out/lpc4337_m0/obj/gpio_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/gpio_18xx_43xx.c -MM > out/lpc4337_m0/obj/gpio_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/otp_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/otp_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/otp_18xx_43xx.c -o out/lpc4337_m0/obj/otp_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/otp_18xx_43xx.c -MM > out/lpc4337_m0/obj/otp_18xx_43xx.d
+echo "*** compiling C file modules/lpc4337_m0/chip/src/pinint_18xx_43xx.c ***"
+*** compiling C file modules/lpc4337_m0/chip/src/pinint_18xx_43xx.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/pinint_18xx_43xx.c -o out/lpc4337_m0/obj/pinint_18xx_43xx.o
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c modules/lpc4337_m0/chip/src/pinint_18xx_43xx.c -MM > out/lpc4337_m0/obj/pinint_18xx_43xx.d
+echo "*** archiving static library chip ***"
+*** archiving static library chip ***
+arm-none-eabi-ar rcs out/lpc4337_m0/libchip.a out/lpc4337_m0/obj/ccan_18xx_43xx.o out/lpc4337_m0/obj/gpiogroup_18xx_43xx.o out/lpc4337_m0/obj/hsadc_18xx_43xx.o out/lpc4337_m0/obj/dac_18xx_43xx.o out/lpc4337_m0/obj/lcd_18xx_43xx.o out/lpc4337_m0/obj/sct_18xx_43xx.o out/lpc4337_m0/obj/wwdt_18xx_43xx.o out/lpc4337_m0/obj/eeprom_18xx_43xx.o out/lpc4337_m0/obj/atimer_18xx_43xx.o out/lpc4337_m0/obj/gpdma_18xx_43xx.o out/lpc4337_m0/obj/rtc_18xx_43xx.o out/lpc4337_m0/obj/aes_18xx_43xx.o out/lpc4337_m0/obj/evrt_18xx_43xx.o out/lpc4337_m0/obj/timer_18xx_43xx.o out/lpc4337_m0/obj/iap_18xx_43xx.o out/lpc4337_m0/obj/sysinit_18xx_43xx.o out/lpc4337_m0/obj/sdio_18xx_43xx.o out/lpc4337_m0/obj/sct_pwm_18xx_43xx.o out/lpc4337_m0/obj/ritimer_18xx_43xx.o out/lpc4337_m0/obj/sdmmc_18xx_43xx.o out/lpc4337_m0/obj/i2c_18xx_43xx.o out/lpc4337_m0/obj/enet_18xx_43xx.o out/lpc4337_m0/obj/uart_18xx_43xx.o out/lpc4337_m0/obj/ssp_18xx_43xx.o out/lpc4337_m0/obj/stopwatch_18xx_43xx.o out/lpc4337_m0/obj/ring_buffer.o out/lpc4337_m0/obj/pmc_18xx_43xx.o out/lpc4337_m0/obj/clock_18xx_43xx.o out/lpc4337_m0/obj/i2s_18xx_43xx.o out/lpc4337_m0/obj/i2cm_18xx_43xx.o out/lpc4337_m0/obj/spi_18xx_43xx.o out/lpc4337_m0/obj/sdif_18xx_43xx.o out/lpc4337_m0/obj/adc_18xx_43xx.o out/lpc4337_m0/obj/chip_18xx_43xx.o out/lpc4337_m0/obj/emc_18xx_43xx.o out/lpc4337_m0/obj/gpio_18xx_43xx.o out/lpc4337_m0/obj/otp_18xx_43xx.o out/lpc4337_m0/obj/pinint_18xx_43xx.o
+arm-none-eabi-size out/lpc4337_m0/libchip.a
+   text	   data	    bss	    dec	    hex	filename
+   2418	      0	      0	   2418	    972	ccan_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+      0	      0	      0	      0	      0	gpiogroup_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    902	      0	      0	    902	    386	hsadc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    166	      0	      0	    166	     a6	dac_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1126	      1	      0	   1127	    467	lcd_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    200	      0	      0	    200	     c8	sct_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    122	      0	      0	    122	     7a	wwdt_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    386	      0	      0	    386	    182	eeprom_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    150	      0	      0	    150	     96	atimer_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   3208	    120	      8	   3336	    d08	gpdma_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1068	      0	      0	   1068	    42c	rtc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    676	      0	     56	    732	    2dc	aes_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    484	      0	      0	    484	    1e4	evrt_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    344	      0	      0	    344	    158	timer_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    754	      0	      0	    754	    2f2	iap_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    654	      0	      0	    654	    28e	sysinit_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   2724	      4	    320	   3048	    be8	sdio_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    490	      0	      0	    490	    1ea	sct_pwm_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    250	      0	      0	    250	     fa	ritimer_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   3298	      0	      4	   3302	    ce6	sdmmc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   3872	     56	     80	   4008	    fa8	i2c_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    848	      0	      4	    852	    354	enet_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   2172	      0	      1	   2173	    87d	uart_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   2516	      0	      0	   2516	    9d4	ssp_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    380	      0	     12	    392	    188	stopwatch_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    956	      0	      0	    956	    3bc	ring_buffer.o (ex out/lpc4337_m0/libchip.a)
+     52	      0	      0	     52	     34	pmc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   4694	      0	      8	   4702	   125e	clock_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1694	      0	      0	   1694	    69e	i2s_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1720	      0	      0	   1720	    6b8	i2cm_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1162	      0	      0	   1162	    48a	spi_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    694	      0	      0	    694	    2b6	sdif_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1252	      0	      0	   1252	    4e4	adc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    272	      0	      0	    272	    110	chip_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+   1528	      0	      0	   1528	    5f8	emc_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    760	      0	      0	    760	    2f8	gpio_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+    496	      0	     40	    536	    218	otp_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+      0	      0	      0	      0	      0	pinint_18xx_43xx.o (ex out/lpc4337_m0/libchip.a)
+echo "*** compiling C file src/TxRxUARTx/M0/src/main_m0.c ***"
+*** compiling C file src/TxRxUARTx/M0/src/main_m0.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M0 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -D__MULTICORE_M0APP -DCORE_M0APP -Dlpc4337_m0 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m0 -mthumb -fdata-sections -ffunction-sections -Isrc/TxRxUARTx/M0/inc -Imodules/lpc4337_m0/base/inc -Imodules/lpc4337_m0/board/inc -Imodules/lpc4337_m0/chip/inc -Imodules/lpc4337_m0/chip/inc/usbd -Imodules/lpc4337_m0/chip/inc/config_m0app -c src/TxRxUARTx/M0/src/main_m0.c -o out/lpc4337_m0/obj/main_m0.o
+In file included from src/TxRxUARTx/M0/src/main_m0.c:48:0:
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'App_DMA_DeInit':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:342:2: warning: implicit declaration of function 'Chip_DMA_Stop'; did you mean 'Chip_GPDMA_Stop'? [-Wimplicit-function-declaration]
+  Chip_DMA_Stop(LPC_GPDMA, dmaChannelNumTx);
+  ^~~~~~~~~~~~~
+  Chip_GPDMA_Stop
+src/TxRxUARTx/M0/src/../../codes/funciones.c:342:27: error: 'dmaChannelNumTx' undeclared (first use in this function)
+  Chip_DMA_Stop(LPC_GPDMA, dmaChannelNumTx);
+                           ^~~~~~~~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:342:27: note: each undeclared identifier is reported only once for each function it appears in
+src/TxRxUARTx/M0/src/../../codes/funciones.c:343:27: error: 'dmaChannelNumRx' undeclared (first use in this function); did you mean 'dmaChannelNumTx'?
+  Chip_DMA_Stop(LPC_GPDMA, dmaChannelNumRx);
+                           ^~~~~~~~~~~~~~~
+                           dmaChannelNumTx
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'App_DMA_Test':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:352:2: error: 'dmaChannelNumTx' undeclared (first use in this function)
+  dmaChannelNumTx = Chip_DMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_UART_Tx);
+  ^~~~~~~~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:352:20: warning: implicit declaration of function 'Chip_DMA_GetFreeChannel'; did you mean 'Chip_GPDMA_GetFreeChannel'? [-Wimplicit-function-declaration]
+  dmaChannelNumTx = Chip_DMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_UART_Tx);
+                    ^~~~~~~~~~~~~~~~~~~~~~~
+                    Chip_GPDMA_GetFreeChannel
+src/TxRxUARTx/M0/src/../../codes/funciones.c:352:55: error: '_GPDMA_CONN_UART_Tx' undeclared (first use in this function); did you mean 'GPDMA_CONN_UART3_Tx'?
+  dmaChannelNumTx = Chip_DMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_UART_Tx);
+                                                       ^~~~~~~~~~~~~~~~~~~
+                                                       GPDMA_CONN_UART3_Tx
+src/TxRxUARTx/M0/src/../../codes/funciones.c:353:2: error: 'isDMATx' undeclared (first use in this function)
+  isDMATx = ENABLE;
+  ^~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:354:2: error: 'channelTC' undeclared (first use in this function)
+  channelTC = channelTCErr = 0;
+  ^~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:354:14: error: 'channelTCErr' undeclared (first use in this function); did you mean 'channelTC'?
+  channelTC = channelTCErr = 0;
+              ^~~~~~~~~~~~
+              channelTC
+src/TxRxUARTx/M0/src/../../codes/funciones.c:355:2: warning: implicit declaration of function 'Chip_DMA_Transfer'; did you mean 'Chip_GPDMA_Transfer'? [-Wimplicit-function-declaration]
+  Chip_DMA_Transfer(LPC_GPDMA, dmaChannelNumTx,
+  ^~~~~~~~~~~~~~~~~
+  Chip_GPDMA_Transfer
+src/TxRxUARTx/M0/src/../../codes/funciones.c:356:14: error: 'uartDMA_menu' undeclared (first use in this function)
+  (uint32_t) &uartDMA_menu[0],
+              ^~~~~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:362:2: error: 'dmaChannelNumRx' undeclared (first use in this function); did you mean 'dmaChannelNumTx'?
+  dmaChannelNumRx = Chip_DMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_UART_Rx);
+  ^~~~~~~~~~~~~~~
+  dmaChannelNumTx
+src/TxRxUARTx/M0/src/../../codes/funciones.c:362:55: error: '_GPDMA_CONN_UART_Rx' undeclared (first use in this function); did you mean '_GPDMA_CONN_UART_Tx'?
+  dmaChannelNumRx = Chip_DMA_GetFreeChannel(LPC_GPDMA, _GPDMA_CONN_UART_Rx);
+                                                       ^~~~~~~~~~~~~~~~~~~
+                                                       _GPDMA_CONN_UART_Tx
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'Print_Menu_Interrupt':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:387:15: error: 'uart_interrupt_menu' undeclared (first use in this function)
+  tmp = sizeof(uart_interrupt_menu);
+               ^~~~~~~~~~~~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:391:9: warning: implicit declaration of function 'Chip_UART_Interrupt_Transmit'; did you mean 'Chip_UART_DeInit'? [-Wimplicit-function-declaration]
+  tmp2 = Chip_UART_Interrupt_Transmit(UARTx, pDat, tmp);
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         Chip_UART_DeInit
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'App_Interrupt_Init':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:402:2: warning: implicit declaration of function 'Chip_UART_IntConfig'; did you mean 'Chip_UART_Init'? [-Wimplicit-function-declaration]
+  Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RBR, ENABLE);
+  ^~~~~~~~~~~~~~~~~~~
+  Chip_UART_Init
+src/TxRxUARTx/M0/src/../../codes/funciones.c:402:22: error: 'LPC_UART' undeclared (first use in this function); did you mean 'LPC_UART1'?
+  Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RBR, ENABLE);
+                      ^~~~~~~~
+                      LPC_UART1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:402:32: error: 'UART_INTCFG_RBR' undeclared (first use in this function); did you mean 'UART_LSR_RDR'?
+  Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RBR, ENABLE);
+                                ^~~~~~~~~~~~~~~
+                                UART_LSR_RDR
+src/TxRxUARTx/M0/src/../../codes/funciones.c:404:32: error: 'UART_INTCFG_RLS' undeclared (first use in this function); did you mean 'UART_INTCFG_RBR'?
+  Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RLS, ENABLE);
+                                ^~~~~~~~~~~~~~~
+                                UART_INTCFG_RBR
+src/TxRxUARTx/M0/src/../../codes/funciones.c:411:1: warning: implicit declaration of function 'Chip_UART_InitRingBuffer'; did you mean 'Chip_UART_IntDisable'? [-Wimplicit-function-declaration]
+ Chip_UART_InitRingBuffer(LPC_UART);
+ ^~~~~~~~~~~~~~~~~~~~~~~~
+ Chip_UART_IntDisable
+src/TxRxUARTx/M0/src/../../codes/funciones.c:414:19: error: 'UARTx_IRQn' undeclared (first use in this function); did you mean 'UART1_IRQn'?
+  NVIC_SetPriority(UARTx_IRQn, 1);
+                   ^~~~~~~~~~
+                   UART1_IRQn
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'App_Interrupt_DeInit':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:423:21: error: 'LPC_UART' undeclared (first use in this function); did you mean 'LPC_UART1'?
+ Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RBR, DISABLE);
+                     ^~~~~~~~
+                     LPC_UART1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:423:31: error: 'UART_INTCFG_RBR' undeclared (first use in this function); did you mean 'UART_LSR_RDR'?
+ Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RBR, DISABLE);
+                               ^~~~~~~~~~~~~~~
+                               UART_LSR_RDR
+src/TxRxUARTx/M0/src/../../codes/funciones.c:425:31: error: 'UART_INTCFG_RLS' undeclared (first use in this function); did you mean 'UART_INTCFG_RBR'?
+ Chip_UART_IntConfig(LPC_UART, UART_INTCFG_RLS, DISABLE);
+                               ^~~~~~~~~~~~~~~
+                               UART_INTCFG_RBR
+src/TxRxUARTx/M0/src/../../codes/funciones.c:427:17: error: 'UARTx_IRQn' undeclared (first use in this function); did you mean 'UART1_IRQn'?
+ NVIC_DisableIRQ(UARTx_IRQn);
+                 ^~~~~~~~~~
+                 UART1_IRQn
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'App_Interrupt_Test':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:437:24: error: 'LPC_UART' undeclared (first use in this function); did you mean 'LPC_UART1'?
+   Print_Menu_Interrupt(LPC_UART);
+                        ^~~~~~~~
+                        LPC_UART1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:441:11: warning: implicit declaration of function 'Chip_UART_Interrupt_Receive'; did you mean 'App_Interrupt_DeInit'? [-Wimplicit-function-declaration]
+     len = Chip_UART_Interrupt_Receive(LPC_UART, &userInput, 1);
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+           App_Interrupt_DeInit
+src/TxRxUARTx/M0/src/../../codes/funciones.c:444:56: error: 'uart_interrupt_menu1' undeclared (first use in this function); did you mean 'App_Interrupt_Test'?
+    Chip_UART_Interrupt_Transmit(LPC_UART, (uint8_t *) &uart_interrupt_menu1[0], sizeof(uart_interrupt_menu1));
+                                                        ^~~~~~~~~~~~~~~~~~~~
+                                                        App_Interrupt_Test
+src/TxRxUARTx/M0/src/../../codes/funciones.c:447:56: error: 'uart_interrupt_menu2' undeclared (first use in this function); did you mean 'uart_interrupt_menu1'?
+    Chip_UART_Interrupt_Transmit(LPC_UART, (uint8_t *) &uart_interrupt_menu2[0], sizeof(uart_interrupt_menu2));
+                                                        ^~~~~~~~~~~~~~~~~~~~
+                                                        uart_interrupt_menu1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:450:55: error: 'uart_interrupt_menu3' undeclared (first use in this function); did you mean 'uart_interrupt_menu2'?
+   Chip_UART_Interrupt_Transmit(LPC_UART, (uint8_t *) &uart_interrupt_menu3[0], sizeof(uart_interrupt_menu3));
+                                                       ^~~~~~~~~~~~~~~~~~~~
+                                                       uart_interrupt_menu2
+src/TxRxUARTx/M0/src/../../codes/funciones.c:453:57: error: 'uart_interrupt_menu4' undeclared (first use in this function); did you mean 'uart_interrupt_menu3'?
+     Chip_UART_Interrupt_Transmit(LPC_UART, (uint8_t *) &uart_interrupt_menu4[0], sizeof(uart_interrupt_menu4));
+                                                         ^~~~~~~~~~~~~~~~~~~~
+                                                         uart_interrupt_menu3
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'Print_Menu_Polling':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:464:18: error: 'LPC_UART' undeclared (first use in this function); did you mean 'LPC_UART1'?
+   Chip_UART_Send(LPC_UART, uartPolling_menu1, sizeof(uartPolling_menu1), BLOCKING);
+                  ^~~~~~~~
+                  LPC_UART1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:464:28: error: 'uartPolling_menu1' undeclared (first use in this function)
+   Chip_UART_Send(LPC_UART, uartPolling_menu1, sizeof(uartPolling_menu1), BLOCKING);
+                            ^~~~~~~~~~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:464:3: error: too many arguments to function 'Chip_UART_Send'
+   Chip_UART_Send(LPC_UART, uartPolling_menu1, sizeof(uartPolling_menu1), BLOCKING);
+   ^~~~~~~~~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:207:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/board/inc/board.h:35,
+                 from src/TxRxUARTx/M0/src/main_m0.c:36:
+modules/lpc4337_m0/chip/inc/uart_18xx_43xx.h:681:5: note: declared here
+ int Chip_UART_Send(LPC_USART_T *pUART, const void *data, int numBytes);
+     ^~~~~~~~~~~~~~
+In file included from src/TxRxUARTx/M0/src/main_m0.c:48:0:
+src/TxRxUARTx/M0/src/../../codes/funciones.c:465:28: error: 'uartPolling_menu2' undeclared (first use in this function); did you mean 'uartPolling_menu1'?
+   Chip_UART_Send(LPC_UART, uartPolling_menu2, sizeof(uartPolling_menu2), BLOCKING);
+                            ^~~~~~~~~~~~~~~~~
+                            uartPolling_menu1
+src/TxRxUARTx/M0/src/../../codes/funciones.c:465:3: error: too many arguments to function 'Chip_UART_Send'
+   Chip_UART_Send(LPC_UART, uartPolling_menu2, sizeof(uartPolling_menu2), BLOCKING);
+   ^~~~~~~~~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:207:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/board/inc/board.h:35,
+                 from src/TxRxUARTx/M0/src/main_m0.c:36:
+modules/lpc4337_m0/chip/inc/uart_18xx_43xx.h:681:5: note: declared here
+ int Chip_UART_Send(LPC_USART_T *pUART, const void *data, int numBytes);
+     ^~~~~~~~~~~~~~
+In file included from src/TxRxUARTx/M0/src/main_m0.c:48:0:
+src/TxRxUARTx/M0/src/../../codes/funciones.c:466:28: error: 'uartPolling_menu5' undeclared (first use in this function); did you mean 'uartPolling_menu2'?
+   Chip_UART_Send(LPC_UART, uartPolling_menu5, sizeof(uartPolling_menu5), BLOCKING);
+                            ^~~~~~~~~~~~~~~~~
+                            uartPolling_menu2
+src/TxRxUARTx/M0/src/../../codes/funciones.c:466:3: error: too many arguments to function 'Chip_UART_Send'
+   Chip_UART_Send(LPC_UART, uartPolling_menu5, sizeof(uartPolling_menu5), BLOCKING);
+   ^~~~~~~~~~~~~~
+In file included from modules/lpc4337_m0/chip/inc/chip_lpc43xx.h:207:0,
+                 from modules/lpc4337_m0/chip/inc/chip.h:39,
+                 from modules/lpc4337_m0/board/inc/board.h:35,
+                 from src/TxRxUARTx/M0/src/main_m0.c:36:
+modules/lpc4337_m0/chip/inc/uart_18xx_43xx.h:681:5: note: declared here
+ int Chip_UART_Send(LPC_USART_T *pUART, const void *data, int numBytes);
+     ^~~~~~~~~~~~~~
+In file included from src/TxRxUARTx/M0/src/main_m0.c:48:0:
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'DMA_IRQHandler':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:476:7: error: 'isDMATx' undeclared (first use in this function)
+   if (isDMATx) {
+       ^~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:477:19: error: 'dmaChannelNumTx' undeclared (first use in this function); did you mean 'dmaChannelNum'?
+   dmaChannelNum = dmaChannelNumTx;
+                   ^~~~~~~~~~~~~~~
+                   dmaChannelNum
+src/TxRxUARTx/M0/src/../../codes/funciones.c:480:19: error: 'dmaChannelNumRx' undeclared (first use in this function); did you mean 'dmaChannelNumTx'?
+   dmaChannelNum = dmaChannelNumRx;
+                   ^~~~~~~~~~~~~~~
+                   dmaChannelNumTx
+src/TxRxUARTx/M0/src/../../codes/funciones.c:482:6: warning: implicit declaration of function 'Chip_DMA_Interrupt'; did you mean 'Chip_GPDMA_Interrupt'? [-Wimplicit-function-declaration]
+  if (Chip_DMA_Interrupt(LPC_GPDMA, dmaChannelNum) == SUCCESS) {
+      ^~~~~~~~~~~~~~~~~~
+      Chip_GPDMA_Interrupt
+src/TxRxUARTx/M0/src/../../codes/funciones.c:483:3: error: 'channelTC' undeclared (first use in this function)
+   channelTC++;
+   ^~~~~~~~~
+src/TxRxUARTx/M0/src/../../codes/funciones.c:486:3: error: 'channelTCErr' undeclared (first use in this function); did you mean 'channelTC'?
+   channelTCErr++;
+   ^~~~~~~~~~~~
+   channelTC
+src/TxRxUARTx/M0/src/../../codes/funciones.c: In function 'UARTx_IRQHandler':
+src/TxRxUARTx/M0/src/../../codes/funciones.c:492:3: warning: implicit declaration of function 'Chip_UART_Interrupt_Handler'; did you mean 'Chip_UART_IRQRBHandler'? [-Wimplicit-function-declaration]
+   Chip_UART_Interrupt_Handler(LPC_UART);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Chip_UART_IRQRBHandler
+src/TxRxUARTx/M0/src/../../codes/funciones.c:492:31: error: 'LPC_UART' undeclared (first use in this function); did you mean 'LPC_UART1'?
+   Chip_UART_Interrupt_Handler(LPC_UART);
+                               ^~~~~~~~
+                               LPC_UART1
+src/TxRxUARTx/M0/src/main_m0.c: In function 'main':
+src/TxRxUARTx/M0/src/main_m0.c:63:7: warning: unused variable 'flag' [-Wunused-variable]
+  bool flag= true;
+       ^~~~
+src/TxRxUARTx/M0/src/main_m0.c:62:16: warning: unused variable 'comando2_M0' [-Wunused-variable]
+  unsigned char comando2_M0=0;
+                ^~~~~~~~~~~
+src/TxRxUARTx/M0/src/main_m0.c:59:6: warning: unused variable 'valor' [-Wunused-variable]
+  int valor=0;
+      ^~~~~
+src/TxRxUARTx/M0/src/main_m0.c:57:16: warning: unused variable 'contador' [-Wunused-variable]
+  unsigned char contador=0;
+                ^~~~~~~~
+src/TxRxUARTx/M0/src/main_m0.c:56:6: warning: unused variable 'tiempo' [-Wunused-variable]
+  int tiempo=4;
+      ^~~~~~
+In file included from src/TxRxUARTx/M0/src/main_m0.c:49:0:
+At top level:
+src/TxRxUARTx/M0/src/../../codes/config.c:5:13: warning: 'initHardware' defined but not used [-Wunused-function]
+ static void initHardware(void)
+             ^~~~~~~~~~~~
+Makefile:72: fallo en las instrucciones para el objetivo 'main_m0.o'
+make: *** [main_m0.o] Error 1

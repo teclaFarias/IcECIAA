@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>memoriaSD</class>
+ <widget class="QDialog" name="memoriaSD">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1181</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lector de Memoria SD</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="1">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1161</width>
+        <height>744</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0" rowspan="2" colspan="2">
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>481</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>500</y>
+            <width>141</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Dirección [decimal]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+          <property name="indent">
+           <number>-1</number>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>500</y>
+            <width>151</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>640</y>
+            <width>111</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Dirección Inicial</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_4">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>640</y>
+            <width>171</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>500</y>
+            <width>131</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Valor [decimal]</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_3">
+          <property name="geometry">
+           <rect>
+            <x>460</x>
+            <y>500</y>
+            <width>81</width>
+            <height>30</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>680</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Dirección Final</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEdit_5">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>680</y>
+            <width>171</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>560</y>
+            <width>151</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Inicializar Memoria</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>560</y>
+            <width>141</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Leer Dirección</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>560</y>
+            <width>141</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Escribir Dirección</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>637</y>
+            <width>141</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Leer Bloques</string>
+          </property>
+         </widget>
+         <zorder>textBrowser</zorder>
+         <zorder>label</zorder>
+         <zorder>lineEdit</zorder>
+         <zorder>label_4</zorder>
+         <zorder>lineEdit_4</zorder>
+         <zorder>pushButton</zorder>
+         <zorder>pushButton_3</zorder>
+         <zorder>lineEdit_4</zorder>
+         <zorder>label_3</zorder>
+         <zorder>lineEdit_3</zorder>
+         <zorder>label_5</zorder>
+         <zorder>lineEdit_5</zorder>
+         <zorder>pushButton</zorder>
+         <zorder>pushButton_3</zorder>
+         <zorder>pushButton_4</zorder>
+         <zorder>pushButton_2</zorder>
+        </widget>
+       </item>
+       <item row="1" column="3" colspan="2">
+        <widget class="QFrame" name="frame">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QComboBox" name="comboBox">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>90</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>410</x>
+            <y>90</y>
+            <width>140</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Imagen -&gt; microSD</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_2">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>210</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>408</x>
+            <y>210</y>
+            <width>141</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Fuentes -&gt; microSD</string>
+          </property>
+         </widget>
+         <widget class="QGraphicsView" name="graphicsView">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>240</width>
+            <height>320</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_3">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>40</y>
+            <width>171</width>
+            <height>30</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>40</y>
+            <width>81</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Dirección </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>3</number>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>408</x>
+            <y>150</y>
+            <width>141</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Iconos -&gt; microSD</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_4">
+          <property name="geometry">
+           <rect>
+            <x>280</x>
+            <y>150</y>
+            <width>121</width>
+            <height>30</height>
+           </rect>
+          </property>
+         </widget>
+         <zorder>comboBox</zorder>
+         <zorder>pushButton_5</zorder>
+         <zorder>comboBox_2</zorder>
+         <zorder>pushButton_6</zorder>
+         <zorder>lineEdit_3</zorder>
+         <zorder>graphicsView</zorder>
+         <zorder>comboBox_3</zorder>
+         <zorder>label_6</zorder>
+         <zorder>pushButton_7</zorder>
+         <zorder>comboBox_4</zorder>
+        </widget>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>121</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Editor de Imagen</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

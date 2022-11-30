@@ -1,0 +1,5 @@
+echo "*** compiling C file modules/lpc4337_m4/base/src/cr_start_m0.c ***"
+*** compiling C file modules/lpc4337_m4/base/src/cr_start_m0.c ***
+arm-none-eabi-gcc -DDEBUG -DCORE_M4 -D__USE_LPCOPEN -D__LPC43XX__ -D__CODE_RED -DLPC43_MULTICORE_M0APP -D__MULTICORE_MASTER -D__MULTICORE_MASTER_SLAVE_M0APP -D__FPU_PRESENT -Dlpc4337_m4 -Dedu_ciaa_nxp -Wall -ggdb3 -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections -IProyectos/00-PRUEBA/codes -Imodules/lpc4337_m4/base/inc -Imodules/lpc4337_m4/board/inc -Imodules/lpc4337_m4/chip/inc -Imodules/lpc4337_m4/chip/inc/usbd -c modules/lpc4337_m4/base/src/cr_start_m0.c -o out/lpc4337_m4/obj/cr_start_m0.o
+make: arm-none-eabi-gcc: No existe el archivo o el directorio
+make: *** [Makefile:73: cr_start_m0.o] Error 127
